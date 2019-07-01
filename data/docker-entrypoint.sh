@@ -31,7 +31,7 @@ ARGS=       # Concatenated arguments
 print_usage() {
 	>&2 echo "Usage: cytopia/goimports [flags] [path...]"
 	>&2 echo "       cytopia/goimports [--ci] [-local] [-srcdir] [path...]"
-	>&2 echo "       cytopia/goimpors --help"
+	>&2 echo "       cytopia/goimports --help"
 	>&2 echo
 	>&2 echo "Dockerized version of goimports with an addition to fail (exit 1) in case of file changes."
 	>&2 echo

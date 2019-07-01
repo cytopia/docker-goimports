@@ -68,7 +68,7 @@ $ docker run --rm cytopia/goimports --help
 
 Usage: cytopia/goimports [flags] [path...]
        cytopia/goimports [--ci] [-local] [-srcdir] [path...]
-       cytopia/goimpors --help
+       cytopia/goimports --help
 
 Dockerized version of goimports with an addition to fail (exit 1) in case of file changes.
 
