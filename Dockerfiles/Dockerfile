@@ -3,7 +3,7 @@ FROM golang:stretch as builder
 RUN set -eux \
 	&& go install golang.org/x/tools/cmd/goimports@latest
 
-FROM alpine:3.16
+FROM alpine:3.16 as production
 LABEL \
 	maintainer="cytopia <cytopia@everythingcli.org>" \
 	repo="https://github.com/cytopia/docker-goimports"
