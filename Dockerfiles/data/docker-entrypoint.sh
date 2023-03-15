@@ -293,11 +293,7 @@ if [ "${#}" -gt "0" ]; then
 				;;
 			# Anything else is handled here
 			*)
-				if [ -n "${ARG_PATH}" ]; then
-					>&2 echo "Error, path has already been specified: ${ARG_PATH}"
-					exit 1
-				fi
-				ARG_PATH="${1}"
+				ARG_PATH="${ARG_PATH} ${1}"
 				shift
 				;;
 		esac
